@@ -29,8 +29,6 @@ public class Stack {
 		push(p1);
 		push(p2);
 	}
-	
-	//popping
 	Person pop() {
 		if(top == -1) {
 			System.out.println("Stack Underflow");
@@ -68,6 +66,7 @@ public class Stack {
 	}
 		
 }
+
 
 
 
