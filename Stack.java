@@ -5,14 +5,11 @@ public class Stack {
 	private int top;
 	private int capacity;
 	
-	//constructor1
 	Stack(int size){
 		capacity = size;
 		top=-1;
 		arr= new Person[capacity];
 	}
-	
-	//constructor2
 	Stack(Person[] inputArr) {
 		capacity = inputArr.length;
 		arr = new Person[capacity];
@@ -21,8 +18,6 @@ public class Stack {
 		}
 		top=capacity-1;
 	}
-	
-	//pushing
 	void push(Person p) {
 		if(top == capacity-1) {
 			System.out.println("Stack Overflow");
@@ -30,8 +25,6 @@ public class Stack {
 		}
 		arr[++top]=p;
 	}
-	
-	//overloading push
 	void push(Person p1 , Person p2) {
 		push(p1);
 		push(p2);
@@ -45,8 +38,6 @@ public class Stack {
 		}
 		return arr[top--];	
 	}
-	
-	//overloading pop
 	void pop(int n) {
 		for(int i=0 ; i<n ; i++) {
 			Person p = pop();
@@ -56,8 +47,6 @@ public class Stack {
 			p.displayPerson();
 		}
 	}
-	
-	//displaying
 	void display(){
 		if(top == -1) {
 			System.out.println("Stack is empty");
@@ -67,8 +56,6 @@ public class Stack {
 			arr[i].displayPerson();
 		}
 	}
-	
-	//overloading display
 	void display(int n) {
 		if(top==-1) {
 			System.out.println("Stack is empty");
@@ -81,6 +68,7 @@ public class Stack {
 	}
 		
 }
+
 
 
 
