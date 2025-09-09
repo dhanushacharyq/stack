@@ -106,8 +106,10 @@ public class Main {
 		 default :
 			 System.out.println("Invalid choice!!");
 		 }
-	 }while(option != 7);
+	 }
+		 while(option != 7);
 	}
 
 }
+
 
